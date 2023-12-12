@@ -44,11 +44,11 @@ public:
         if (mob_prev == mobile_No) {
             mobile_No = mob_new;
             cout << endl << "Successfully Updated Mobile no.";
-            cin.get(); // Equivalent to _getch()
+            cin.get(); 
         }
         else {
             cout << endl << "Incorrect !!! Old Mobile no";
-            cin.get(); // Equivalent to _getch()
+            cin.get(); 
         }
     }
 
@@ -57,11 +57,11 @@ public:
             balance -= amount_a;
             cout << endl << "Please Collect Your Cash";
             cout << endl << "Available Balance: " << balance;
-            cin.get(); // Equivalent to _getch()
+            cin.get(); 
         }
         else {
             cout << endl << "Invalid Input or Insufficient Balance";
-            cin.get(); // Equivalent to _getch()
+            cin.get(); 
         }
     }
 };
@@ -76,7 +76,9 @@ int main() {
 
     do {
         system("cls");
-        cout << endl << "****Welcome to IIUC ATM*****" << endl;
+        cout << endl<< endl << "--------------------------------" << endl;
+        cout << "****Welcome to IIUC ATM*****" << endl;
+        cout << "--------------------------------" << endl;
         cout << endl << "Enter Your Account No ";
         cin >> enterAccountNo;
 
@@ -89,7 +91,9 @@ int main() {
                 string oldMobileNo, newMobileNo;
 
                 system("cls");
-                cout << endl <<endl << "**** Welcome to IIUC ATM *****" << endl;
+        cout << endl<< endl << "--------------------------------" << endl;
+        cout << "****Welcome to IIUC ATM*****" << endl;
+        cout << "--------------------------------" << endl;
                 cout << endl << "Select Options ";
                 cout << endl << "1. Check Balance";
                 cout << endl << "2. Cash withdraw";
@@ -101,7 +105,7 @@ int main() {
 
                 switch (choice) {
                     case 1:
-                        cout << endl << "Your Bank balance is: " << user1.getBalance();
+                        cout << endl << "Your Bank balance is: " << user1.getBalance()<<endl;
                         cin.get();
                         break;
 
@@ -116,7 +120,7 @@ int main() {
                         cout << endl << "-> Account no :" << user1.getAccountNo();
                         cout << endl << "-> Name      :" << user1.getName();
                         cout << endl << "-> Balance   :" << user1.getBalance();
-                        cout << endl << "-> Mobile No. :" << user1.getMobileNo();
+                        cout << endl << "-> Mobile No. :" << user1.getMobileNo()<<endl;
                         cin.get();
                         break;
 
